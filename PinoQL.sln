@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinoQLLib", "PinoQLLib\PinoQLLib.csproj", "{20A3EFFC-6B99-4120-87A7-92F09D4844E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinoQL", "PinoQL\PinoQL.csproj", "{C69DF860-5390-4086-AB97-1411F0EAA52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{BB5C20D6-D642-4135-9617-1C14C546B4F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A3EFFC-6B99-4120-87A7-92F09D4844E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A3EFFC-6B99-4120-87A7-92F09D4844E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A3EFFC-6B99-4120-87A7-92F09D4844E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A3EFFC-6B99-4120-87A7-92F09D4844E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69DF860-5390-4086-AB97-1411F0EAA52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69DF860-5390-4086-AB97-1411F0EAA52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69DF860-5390-4086-AB97-1411F0EAA52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69DF860-5390-4086-AB97-1411F0EAA52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5C20D6-D642-4135-9617-1C14C546B4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5C20D6-D642-4135-9617-1C14C546B4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5C20D6-D642-4135-9617-1C14C546B4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5C20D6-D642-4135-9617-1C14C546B4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {425D700B-CE75-4E13-BDF7-81D1EABF31F9}
+	EndGlobalSection
+EndGlobal

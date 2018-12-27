@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20A3EFFC-6B99-4120-87A7-92F09D4844E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PinoQLLib</RootNamespace>
+    <AssemblyName>PinoQLLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\DataBase\IDataBase.cs" />
+    <Compile Include="core\DataBase\InitialDataBase.cs" />
+    <Compile Include="core\DataProviders\DataProvider.cs" />
+    <Compile Include="core\DataProviders\IDataProvider.cs" />
+    <Compile Include="core\DataProviders\IQueryResult.cs" />
+    <Compile Include="core\DataProviders\QueryResult.cs" />
+    <Compile Include="core\Environment\Environment.cs" />
+    <Compile Include="core\ORM\context\PinoQLContext.cs" />
+    <Compile Include="core\ORM\PinoQLDBSet.cs" />
+    <Compile Include="core\QueryGenerator\ConnectionString\ConnectionString.cs" />
+    <Compile Include="core\QueryGenerator\ConnectionString\IConnectionString.cs" />
+    <Compile Include="core\QueryGenerator\IQueryGenerator.cs" />
+    <Compile Include="core\QueryGenerator\QueryGenerator.cs" />
+    <Compile Include="core\Queries\IQuery.cs" />
+    <Compile Include="core\Queries\Query.cs" />
+    <Compile Include="core\SaveLoad\ReadWriteObject.cs" />
+    <Compile Include="core\Table\ITable.cs" />
+    <Compile Include="core\Table\ITableColumn.cs" />
+    <Compile Include="core\Table\Table.cs" />
+    <Compile Include="core\Table\TableColumn.cs" />
+    <Compile Include="core\Translator\CSVQueryConverter.cs" />
+    <Compile Include="core\Translator\CSVQueryFinder.cs" />
+    <Compile Include="core\Translator\ElementOfChainAction.cs" />
+    <Compile Include="core\Translator\IElementOfChainAction.cs" />
+    <Compile Include="core\Translator\ITranslator.cs" />
+    <Compile Include="core\Translator\JSONQueryConverter.cs" />
+    <Compile Include="core\Translator\JSONQueryFinder.cs" />
+    <Compile Include="core\Translator\SingleQueryConverter.cs" />
+    <Compile Include="core\Translator\Translator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
